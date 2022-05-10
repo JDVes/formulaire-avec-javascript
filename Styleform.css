@@ -1,0 +1,110 @@
+#f {
+    background-color: #6ba2ce;
+}
+
+.violet {
+    background-color: #a9d7e9;
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    margin: auto 5%;
+}
+
+.cool2 {
+    margin-left: 500px;
+    margin-top: -20px;
+    position: absolute;
+}
+
+.cool4 {
+    margin-left: 500px;
+    margin-top: -20px;
+    position: absolute;
+}
+
+.cool6 {
+    margin-left: 500px;
+    margin-top: -20px;
+    position: absolute;
+}
+
+.cool8 {
+    margin-left: 500px;
+    margin-top: -20px;
+    position: absolute;
+}
+
+.cut {
+    margin-left: 500px;
+}
+
+
+/* .cool{margin-left: 500px;margin-top: 50px;} */
+
+.cut4 {
+    margin-left: 500px;
+}
+
+.cut5 {
+    margin-left: 450px;
+}
+
+.cool1 {
+    margin-left: 400px;
+    padding-bottom: 200px;
+}
+
+.cool3 {
+    margin-left: 400px;
+    padding-bottom: 200px
+}
+
+.cool5 {
+    margin-left: 150px;
+}
+
+.cool7 {
+    margin-left: 300px;
+}
+
+
+/* .cool9{margin-left: 230px;} */
+
+
+/* .cut1{margin-left: 150px;margin-top: 70px;position: absolute;} */
+
+.cut2 {
+    margin-left: 200px;
+    margin-top: 70px;
+    position: absolute;
+}
+
+.cut3 {
+    margin-left: 450px;
+}
+
+.cut {
+    margin-left: 210px;
+    margin-top: 20px;
+    position: absolute;
+}
+
+
+/* .cut8{
+    margin-left: 500px;
+    margin-top: -20px;position: absolute;
+} */
+
+input[type="submit"] {
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    color: white;
+    height: 30px;
+}

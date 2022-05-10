@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styleform.css">
+    <title>Formulaire</title>
+</head>
+
+<body class="violet">
+    <h2>Formulaire DWWM</h2>
+    <form action="traitement.php" class="t" method="post">
+        <label class="cool1">Nom</label><br>
+        <input class="cool2" id="cool02" type="text" placeholder="Entrez votre nom"><br>
+        <label class="cool3">Email</label><br>
+        <input class="cool4" id="cool03" type="Email" placeholder="Entrez votre mail"><br>
+
+        <label class="cool5">Indiquez votre satisfaction au cours de 1 a 10</label><br>
+        <input class="cool6" id="cool04" type="number" placeholder="numero de 1 à 10"> <br>
+
+        <label class="cool7">Qui est votre Coach?</label><br>
+        <select class="cool8" id="cool05">
+                <option value="Birante">Birante</option>
+                <option value="Mamadou">Mamadou</option>
+                <option value="Malick">Malick</option>
+            </select> <br>
+
+        <!-- <label class="cool9" >A quel moment avez-vous cours?</label><br>
+            <div class="cut8">
+                <input type="radio" >Matin<br>
+                <input type="radio" >Apres-midi<br>
+                <input type="radio">Soir<br>
+            </div> -->
+
+
+        <!-- <label class="cut1" >Quelles Outils avez-vous rencontrés jusque là?</label><br>
+            <label class="cut2" >(Selectionnez tout ce qui s'applique)</label>
+            <div class="cool">
+                <input type="checkbox">HTML <br>
+                <input type="checkbox">CSS <br>
+                <input type="checkbox">Javascript <br>
+                <input type="checkbox">Editeur de texte <br>
+                <input type="checkbox" >Ligne de commande <br>
+               
+            </div> -->
+
+        <label class="cut">Decrivez votre experience jusque là</label> <br>
+        <textarea class="cut4" id="cool06" rows="3" cols="27" placeholder="Decrivez votre experience ici"></textarea> <br>
+
+        <!-- insertion de levenement onclick permettant de verifier avec la fonction verifier les informations saisies-->
+
+        <input class="cut3" type="submit" onclick="verifier()" id="f" name="Vérifier" value="Vérifier">
+
+
+
+    </form>
+
+    <!--  lieux d'affichage des informations recuperer apres declanchement de l'evenement onclick qui execute la fonction verifier.
+    affection d'un id respectif a chaque champ d'affichage pour les appeler plus tard -->
+
+    <h3 id="message"></h3>
+    <h3 id="message1"></h3>
+    <h3 id="message2"></h3>
+    <h3 id="message3"></h3>
+    <h3 id="message4"></h3>
+
+    <script>
+        // execution de la function verifier,qui verifie les informations saisie
+        function verifier() {
+
+            // declaration d'une variable quelconque puis affection de la valeur de  l'input saisie  a cette variabble par appel de l'id correspondant a travers la fonction queryselector
+
+
+            let non = document.querySelector("#cool02");
+
+            // declaration d'une variable quelconque puis affection du champ d'affichage de cette valeurs saisie a cette variabble par appel de l'id correspondant a travers la fonction queryselector
+            let affiche1 = document.querySelector("#message");
+
+            // affichage de la variable contenant l'emplacement d'affichage de chaque input saisie par la fonction innerhtml puis affectation a cette variable  la valeur de la variable contenant l"information saisie.
+
+            affiche1.innerHTML = non.value;
+
+
+            let email = document.querySelector("#cool03");
+            let affiche2 = document.querySelector("#message1");
+            affiche2.innerHTML = email.value;
+
+
+            let num = document.querySelector("#cool04");
+            let affiche3 = document.querySelector("#message2");
+            affiche3.innerHTML = num.value;
+
+
+            let prof = document.querySelector("#cool05");
+            let affiche4 = document.querySelector("#message3");
+            affiche4.innerHTML = prof.value;
+
+            let text = document.querySelector("#cool06");
+            let affiche5 = document.querySelector("#message4");
+            affiche5.innerHTML = text.value;
+
+
+        }
+    </script>
+
+</body>
+
+</html>
